@@ -85,7 +85,7 @@ if detect_model == 'ThresholdAD':
     from adtk.detector import ThresholdAD
     # 如果未上传文件，则使用示例数据进行展示
     if uploaded_file is None:
-        df_test = pd.read_csv('./data/temperature.csv')
+        df_test = pd.read_csv('./ADTK/data/temperature.csv')
 
     else:
         df_test = pd.read_csv(uploaded_file)
@@ -129,7 +129,7 @@ elif detect_model == 'QuantileAD':
     
     # 如果未上传文件，则使用示例数据进行展示
     if uploaded_file is None:
-        df_test = pd.read_csv('./data/temperature.csv')
+        df_test = pd.read_csv('./ADTK/data/temperature.csv')
 
     else:
         df_test = pd.read_csv(uploaded_file)
@@ -172,7 +172,7 @@ elif detect_model == 'InterQuartileRangeAD':
     
     # 如果未上传文件，则使用示例数据进行展示
     if uploaded_file is None:
-        df_test = pd.read_csv('./data/temperature.csv')
+        df_test = pd.read_csv('./ADTK/data/temperature.csv')
 
     else:
         df_test = pd.read_csv(uploaded_file)
@@ -211,7 +211,7 @@ elif detect_model == 'GeneralizedESDTestAD':
     
     # 如果未上传文件，则使用示例数据进行展示
     if uploaded_file is None:
-        df_test = pd.read_csv('./data/temperature.csv')
+        df_test = pd.read_csv('./ADTK/data/temperature.csv')
 
     else:
         df_test = pd.read_csv(uploaded_file)
@@ -249,7 +249,7 @@ elif detect_model == 'PersistAD':
     
     # 如果未上传文件，则使用示例数据进行展示
     if uploaded_file is None:
-        df_test = pd.read_csv('./data/price_short.csv')
+        df_test = pd.read_csv('./ADTK/data/price_short.csv')
 
     else:
         df_test = pd.read_csv(uploaded_file)
