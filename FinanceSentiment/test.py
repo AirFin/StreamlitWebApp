@@ -13,7 +13,7 @@ import re
 
 dfcf_scraper  = None
 dfcf_scraper = AutoScraper()
-dfcf_scraper.load('./model/dfcf.pkl')
+dfcf_scraper.load(r'./dfcf.pkl')
 
 df_all = pd.DataFrame()
 
