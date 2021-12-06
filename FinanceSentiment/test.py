@@ -14,7 +14,7 @@ import re
 
 dfcf_scraper = None
 dfcf_scraper = AutoScraper()
-dfcf_scraper.load('model')
+dfcf_scraper.load('model.json')
 
 
 df_all = pd.DataFrame()
