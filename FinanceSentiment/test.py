@@ -11,9 +11,20 @@ import re
 
 
 
-dfcf_scraper  = None
-dfcf_scraper = AutoScraper()
-dfcf_scraper.load('.\dfcf.pkl')
+url = 'http://guba.eastmoney.com/list,605300_1.html'
+
+wanted_dict = {'title': ['今天抄底了[鼓掌]这是底吗？'], 
+               'writer': ['基民SAX2Rk'],
+                'time':['12-06 17:52']
+               }
+
+scraper = None
+scraper = AutoScraper()
+scraper.build(url=url, wanted_dict=wanted_dict)
+
+
+
+
 
 df_all = pd.DataFrame()
 
@@ -22,7 +33,7 @@ df_all = pd.DataFrame()
 for n in range(1, 3):
     url = f'http://guba.eastmoney.com/list,605258_{n}.html'
 
-    result = dfcf_scraper.get_result_similar(url=url, grouped=True)
+    result = scraper.get_result_similar(url=url, grouped=True)
     
     df = pd.DataFrame(result)
     df = df.iloc[:,[0,1,-1]]
