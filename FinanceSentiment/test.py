@@ -25,8 +25,8 @@ st.markdown('# 1 数据展示')
 '''这部分是用autoscraper爬取的'''
 dfcf_scraper = None
 dfcf_scraper = AutoScraper()
-# dfcf_scraper.load('/app/streamlitwebapp/FinanceSentiment/model.json')
-dfcf_scraper.load('model.json')
+dfcf_scraper.load('/app/streamlitwebapp/FinanceSentiment/model.json')
+# dfcf_scraper.load('model.json')
 
 df_all = pd.DataFrame()
 
