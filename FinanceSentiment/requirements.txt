@@ -1,0 +1,5 @@
+streamlit==1.3.0
+plotly==5.1.0
+pandas==1.3.4
+autoscraper==1.1.12
+snownlp==0.12.3
