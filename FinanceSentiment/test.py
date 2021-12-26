@@ -35,8 +35,8 @@ else:
     dfcf_scraper = None
     dfcf_scraper = AutoScraper()
     # 加载爬取规则
-    # dfcf_scraper.load('/app/streamlitwebapp/FinanceSentiment/model.json')
-    dfcf_scraper.load('model.json')
+    dfcf_scraper.load('/app/streamlitwebapp/FinanceSentiment/model.json')
+    # dfcf_scraper.load('model.json')
 
     df_all = pd.DataFrame()
 
