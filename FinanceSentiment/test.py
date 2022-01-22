@@ -41,7 +41,7 @@ else:
     df_all = pd.DataFrame()
 
     # 如果是2就是第一页，如果是3，就是前两页
-    year = 2022
+    year = 2023
     for page in range(1, pages + 1):
         url = 'https://guba.eastmoney.com/list,' + asset_code + '_' + str(
             page) + '.html'
