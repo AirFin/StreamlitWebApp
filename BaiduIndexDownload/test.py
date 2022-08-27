@@ -25,7 +25,7 @@ st.title('百度指数一键下载')
 # imput widgets
 
 keyword1 = st.sidebar.text_input('第一个词','火锅')
-keyword2 = st.sidebar.text_input('第二个词','汇率')
+keyword2 = st.sidebar.text_input('第二个词','烧烤')
 keyword3 = st.sidebar.text_input('第三个词')
 keyword4 = st.sidebar.text_input('第四个词')
 keyword5 = st.sidebar.text_input('第五个词')
@@ -61,7 +61,12 @@ options = st.multiselect(
 
 cookie = 'BDUSS=' + st.text_input('百度cookie' , type='password', help='如果下面的示意图还是看不懂，可以再搜索一下。')
 
+# local
+# image = Image.open('baidu_cookie.png')
+
+# online
 image = Image.open('./BaiduIndexDownload/baidu_cookie.png')
+
 st.image(image, caption='百度cookie获取示意图')
 
 
@@ -103,6 +108,7 @@ if st.button('准备好了，开始获取！'):
                 province = '全国'
             else:
                 pass
+            df_search_index['index'] = df_search_index['index'].astype('int')
             fig_search_index = px.line(df_search_index,
                                        x='date',
                                        y='index',
@@ -113,9 +119,6 @@ if st.button('准备好了，开始获取！'):
             fig_search_index
             # 分割线
             st.markdown('---')
-
-
-
 
 
 
@@ -156,6 +159,7 @@ if st.button('准备好了，开始获取！'):
                 province = '全国'
             else:
                 pass
+            df_feed_index['index'] = df_feed_index['index'].astype('int')
             fig_feed_index = px.line(df_feed_index,
                                        x='date',
                                        y='index',
@@ -204,6 +208,7 @@ if st.button('准备好了，开始获取！'):
                 province = '全国'
             else:
                 pass
+            df_news_index['index'] = df_news_index['index'].astype('int')
             fig_news_index = px.line(df_news_index,
                                        x='date',
                                        y='index',
