@@ -61,7 +61,7 @@ options = st.multiselect(
 
 cookie = 'BDUSS=' + st.text_input('百度cookie' , type='password', help='如果下面的示意图还是看不懂，可以再搜索一下。')
 
-image = Image.open('baidu_cookie.png')
+image = Image.open('./BaiduIndexDownload/baidu_cookie.png')
 st.image(image, caption='百度cookie获取示意图')
 
 
