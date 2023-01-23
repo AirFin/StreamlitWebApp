@@ -187,7 +187,7 @@ if '；' in df_target['专题名称'].values[0]:
 
     st.info(':one:首先，它属于' + '**' + sub + '**' + '小类' )
     sub_fun(sub)
-    st.info(':two:首先，它属于' + '**' + sub_2 + '**' + '小类' )
+    st.info(':two:其次，它属于' + '**' + sub_2 + '**' + '小类' )
     sub_fun(sub_2)
 
 
