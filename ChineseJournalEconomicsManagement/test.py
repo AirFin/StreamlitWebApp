@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 
 # 在GitHub上路径要这样写
-df_ec_mn = pd.read_excel("./ChineseJournalEconomicsManagement/df_ec_mn.xlsx")
+df_ec_mn = pd.read_excel("'/app/streamlitwebapp/ChineseJournalEconomicsManagement/df_ec_mn.xlsx")
 
 st.title('中文经管期刊影响因子速查')
 
