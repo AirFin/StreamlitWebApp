@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 
 
-df_ec_mn = pd.read_excel(r"C:\Users\10165\Desktop\中文期刊论文数据分析\streamlit project\Chinese Journal of Economics and Management\df_ec_mn.xlsx")
+df_ec_mn = pd.read_excel("df_ec_mn.xlsx")
 
 st.title('中文经管期刊影响因子速查')
 
