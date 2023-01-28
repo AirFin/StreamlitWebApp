@@ -5,7 +5,7 @@ import plotly.express as px
 
 # preparation work
 # import data
-df = pd.read_excel("data.xlsx")
+df = pd.read_excel("/app/streamlitwebapp/ChineseJournalImpactFactor/data.xlsx")
 
 # 大函数
 def main_fun(main):
