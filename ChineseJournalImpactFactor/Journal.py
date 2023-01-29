@@ -78,8 +78,8 @@ def main_fun(main):
         index_target_zh_begin = index_target_zh_main.values[0]-5
 
 
-    st.markdown(':star:' + '2022年复合影响因子：' + '**' + str(df_zhuanji['(2022)复合影响因子'].values[0]) + '**' +f'，在**{main}**大类的排名百分比：' + '**' +str(df_zhuanji['(2022)复合影响因子 rank pct'].values[0])+ '**')
-    st.markdown(':star:' + '2022年综合影响因子：' + '**' +str(df_zhuanji['(2022)综合影响因子'].values[0]) + '**' +f'，在**{main}**大类的排名百分比：' + '**' +str(df_zhuanji['(2022)综合影响因子 rank pct'].values[0])+ '**')
+    st.markdown(':star:' + '2022年复合影响因子：' + '**' + str(df_zhuanji[df_zhuanji['期刊名称']==name_journal]['(2022)复合影响因子'].values[0]) + '**' +f'，在**{main}**大类的排名百分比：' + '**' +str(df_zhuanji[df_zhuanji['期刊名称']==name_journal]['(2022)复合影响因子 rank pct'].values[0])+ '**')
+    st.markdown(':star:' + '2022年综合影响因子：' + '**' +str(df_zhuanji[df_zhuanji['期刊名称']==name_journal]['(2022)综合影响因子'].values[0]) + '**' +f'，在**{main}**大类的排名百分比：' + '**' +str(df_zhuanji[df_zhuanji['期刊名称']==name_journal]['(2022)综合影响因子 rank pct'].values[0])+ '**')
     # 2列
     col1, col2 = st.columns(2)
     with col1:
@@ -160,8 +160,8 @@ def sub_fun(sub):
         index_target_zh_begin = index_target_zh_sub.values[0]-5
 
 
-    st.markdown(':star:' + '2022年复合影响因子：' + '**' + str(df_zhuanti['(2022)复合影响因子'].values[0]) + '**' +f'，在**{sub}**小类的排名百分比：' + '**' +str(df_zhuanti['(2022)复合影响因子 rank pct'].values[0])+ '**')
-    st.markdown(':star:' + '2022年综合影响因子：' + '**' +str(df_zhuanti['(2022)综合影响因子'].values[0]) + '**' +f'，在**{sub}**小类的排名百分比：' + '**' +str(df_zhuanti['(2022)综合影响因子 rank pct'].values[0])+ '**')
+    st.markdown(':star:' + '2022年复合影响因子：' + '**' + str(df_zhuanti[df_zhuanti['期刊名称']==name_journal]['(2022)复合影响因子'].values[0]) + '**' +f'，在**{sub}**小类的排名百分比：' + '**' +str(df_zhuanti[df_zhuanti['期刊名称']==name_journal]['(2022)复合影响因子 rank pct'].values[0])+ '**')
+    st.markdown(':star:' + '2022年综合影响因子：' + '**' +str(df_zhuanti[df_zhuanti['期刊名称']==name_journal]['(2022)综合影响因子'].values[0]) + '**' +f'，在**{sub}**小类的排名百分比：' + '**' +str(df_zhuanti[df_zhuanti['期刊名称']==name_journal]['(2022)综合影响因子 rank pct'].values[0])+ '**')
     # 2列
     col1, col2 = st.columns(2)
     with col1:
