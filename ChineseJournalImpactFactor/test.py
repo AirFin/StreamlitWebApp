@@ -223,6 +223,3 @@ else:
     sub = df_target['专题名称'].values[0]
     sub_fun(sub)
 
-st.markdown('感谢使用，更多信息请访问')
-st.success('网站：[https://www.sharkfin.top/](https://www.sharkfin.top/)')
-st.info('微信公众号：沙克芬 SharkFin')
