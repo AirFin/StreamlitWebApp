@@ -5,10 +5,10 @@ import plotly.express as px
 
 # preparation work
 # import data
-# df = pd.read_excel("/app/streamlitwebapp/ChineseJournalImpactFactor/data.xlsx")
-df = pd.read_excel("data.xlsx")
-# df = pd.read_excel("/app/streamlitwebapp/ChineseJournalImpactFactor/df_xueke.xlsx")
-df_xueke = pd.read_excel("df_xueke.xlsx")
+df = pd.read_excel("/app/streamlitwebapp/ChineseJournalImpactFactor/data.xlsx")
+# df = pd.read_excel("data.xlsx")
+df = pd.read_excel("/app/streamlitwebapp/ChineseJournalImpactFactor/df_xueke.xlsx")
+# df_xueke = pd.read_excel("df_xueke.xlsx")
 
 
 option_0 = st.selectbox('你想按学科大类还是学科小类查询？',('学科大类', '学科小类'))
