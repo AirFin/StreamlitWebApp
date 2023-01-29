@@ -6,6 +6,7 @@ import plotly.express as px
 # preparation work
 # import data
 df = pd.read_excel("/app/streamlitwebapp/ChineseJournalImpactFactor/data.xlsx")
+# df = pd.read_excel("data.xlsx")
 
 # 大函数
 def main_fun(main):
@@ -174,12 +175,23 @@ def sub_fun(sub):
 
 
 st.title('中文期刊影响因子速查及可视化')
-name_journal = st.text_input('请输入要查询的期刊名称：', '遥感学报')
+st.markdown('这个在线应用可以帮助你快速查询中文期刊的影响因子，以及在其所属学科大类和学科小类中的排名情况，并显示和其影响因子相似的期刊。')
+
+st.markdown('# 在这里输入:point_down:')
+name_journal = st.text_input('请输入要查询的中文期刊名称：', '遥感学报')
 df_target = df[df['期刊名称']== name_journal]
+
+st.markdown('# 期刊基本信息')
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.markdown(':old_key:' + '是否为CSSCI期刊：' + '**' +str(df_target['被中文社会科学引文索引(2021-2022)来源期刊收录'].values[0])+ '**')
+with col2:
+    st.markdown(':old_key:' + '是否为CSSCI期刊扩展版：' + '**' +str(df_target['被中文社会科学引文索引(2021-2022)来源期刊(扩展版)收录'].values[0])+ '**')
+with col3:
+    st.markdown(':old_key:' + '是否为北大核心期刊：' + '**' +str(df_target['被北京大学《中文核心期刊总览》来源期刊收录'].values[0]) + '**')
 
 st.text('下面为该期刊的所有详细信息')
 df_target
-
 
 st.markdown('# 在学科大类下的影响因子排名')
 # 如果专辑名称包含分号，分割成两个专辑名称，否则原样输出
