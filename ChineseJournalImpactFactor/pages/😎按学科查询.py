@@ -7,7 +7,7 @@ import plotly.express as px
 # import data
 df = pd.read_excel("/app/streamlitwebapp/ChineseJournalImpactFactor/data.xlsx")
 # df = pd.read_excel("data.xlsx")
-df = pd.read_excel("/app/streamlitwebapp/ChineseJournalImpactFactor/df_xueke.xlsx")
+df_xueke = pd.read_excel("/app/streamlitwebapp/ChineseJournalImpactFactor/df_xueke.xlsx")
 # df_xueke = pd.read_excel("df_xueke.xlsx")
 
 
