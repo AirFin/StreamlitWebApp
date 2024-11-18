@@ -1,3 +1,4 @@
 graphviz==0.20.3
 pandas==2.2.3
 streamlit==1.39.0
+openpyxl==3.1.5
